@@ -1,0 +1,5 @@
+/* Global root constraints removed to allow full-screen Hero section */
+#root {
+  width: 100%;
+  height: 100%;
+}

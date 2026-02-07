@@ -1,0 +1,53 @@
+.cinematic-section {
+    width: 100vw;
+    height: 120vh;
+    /* Shorter scroll for a single message */
+    position: relative;
+    background: #ffffff;
+}
+
+.cinematic-canvas-container {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.cinematic-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.cinematic-text {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.message-box {
+    background: rgba(255, 255, 255, 0.85);
+    /* Increased opacity */
+    backdrop-filter: blur(15px);
+    /* Increased blur */
+    padding: 3rem;
+    border-radius: 30px;
+    border: 2px solid rgba(196, 30, 58, 0.2);
+    /* Soft red border */
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0 10px 40px rgba(196, 30, 58, 0.1);
+}
+
+.message-box h2 {
+    font-family: var(--font-serif);
+    color: var(--romantic-red);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}

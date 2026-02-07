@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Inter:wght@400;500;700&family=Playfair+Display:wght@400;700;900&display=swap');
+
+:root {
+  /* Puffy Heart Palette - More Vibrant! */
+  --misty-white: #fdfbfb;
+  --puffy-purple: #f3e8ff;
+  --puffy-blue: #dbeafe;
+  --puffy-yellow: #fff7ed;
+  --puffy-pink: #fce7f3;
+  --romantic-red: #c41e3a;
+  --deep-brown: #2c1e14;
+
+  /* Fonts */
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-hand: 'Dancing Script', cursive;
+
+  /* Glassmorphism - Polished */
+  --glass-bg: rgba(255, 255, 255, 0.45);
+  --glass-border: rgba(255, 255, 255, 0.7);
+  --glass-shadow: 0 12px 40px 0 rgba(196, 30, 58, 0.12);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--misty-white);
+  color: var(--deep-brown);
+  overflow-x: hidden;
+}
+
+/* Base scroll container with a subtle grain/noise */
+.app-main {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: linear-gradient(180deg,
+      #ffffff 0%,
+      #fff5f5 25%,
+      #fff1f2 50%,
+      #fff5f5 75%,
+      #ffffff 100%);
+}
+
+.app-main::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  /* Very subtle pattern */
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Section titles with better contrast */
+.section-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: var(--romantic-red);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  text-shadow: 2px 2px 0px rgba(196, 30, 58, 0.05);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--misty-white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffbbc7;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--romantic-red);
+}
+
+/* Glass Card Utility */
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  border-radius: 24px;
+}

@@ -1,0 +1,79 @@
+.photobooth-section {
+    padding: 8rem 2rem;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.booth-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.photo-strip {
+    background: white;
+    /* Keep strip white for contrast */
+    padding: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    cursor: pointer;
+    transform: rotate(-2deg);
+    transition: transform 0.3s ease;
+}
+
+.photo-strip:nth-child(even) {
+    transform: rotate(2deg);
+}
+
+.photo-strip:hover {
+    transform: scale(1.02) rotate(0deg);
+    z-index: 5;
+}
+
+.strip-image-container {
+    width: 220px;
+    height: 220px;
+    background: #eee;
+    overflow: hidden;
+    position: relative;
+}
+
+.strip-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.strip-caption {
+    font-family: var(--font-hand);
+    font-size: 1.2rem;
+    color: var(--deep-brown);
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+/* Developing Animation Overlay */
+.developing-overlay {
+    position: absolute;
+    inset: 0;
+    background: white;
+    z-index: 2;
+    mix-blend-mode: lighten;
+}
+
+.developing-flash {
+    position: fixed;
+    inset: 0;
+    background: white;
+    z-index: 100;
+    pointer-events: none;
+}

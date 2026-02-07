@@ -1,0 +1,64 @@
+.floating-hearts-container {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.floating-heart {
+    position: absolute;
+    bottom: -50px;
+    color: var(--romantic-red);
+    opacity: 0.15;
+    animation: floatUp linear infinite;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0deg) scale(1);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.2;
+    }
+
+    90% {
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: translateY(-110vh) rotate(360deg) scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* Add some swaying motion */
+.floating-heart:nth-child(even) {
+    animation: floatUpSway linear infinite;
+}
+
+@keyframes floatUpSway {
+    0% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    25% {
+        transform: translateY(-25vh) translateX(30px) rotate(90deg);
+    }
+
+    50% {
+        transform: translateY(-50vh) translateX(-30px) rotate(180deg);
+    }
+
+    75% {
+        transform: translateY(-75vh) translateX(30px) rotate(270deg);
+    }
+
+    100% {
+        transform: translateY(-110vh) translateX(0) rotate(360deg);
+        opacity: 0;
+    }
+}

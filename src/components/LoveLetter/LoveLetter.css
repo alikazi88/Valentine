@@ -1,0 +1,86 @@
+.love-letter-section {
+    padding: 8rem 2rem;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.letter-container {
+    width: min(95vw, 800px);
+    min-height: 400px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(196, 30, 58, 0.1);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    border: 1px solid rgba(196, 30, 58, 0.05);
+    background-image:
+        radial-gradient(at 0% 0%, rgba(255, 255, 255, 0.8) 0, transparent 50%),
+        linear-gradient(rgba(244, 244, 244, 0.2) 1px, transparent 1px);
+    background-size: 100% 32px;
+}
+
+.envelope-closed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.closed-text {
+    font-family: var(--font-serif);
+    font-size: 1.8rem;
+    color: var(--romantic-red);
+}
+
+.letter-open-content {
+    width: 100%;
+}
+
+.letter-header {
+    font-family: var(--font-hand);
+    font-size: 2rem;
+    color: var(--romantic-red);
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.letter-body {
+    font-family: var(--font-hand);
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: var(--deep-brown);
+    white-space: pre-wrap;
+}
+
+.letter-footer {
+    margin-top: 3rem;
+    text-align: right;
+    font-family: var(--font-hand);
+    font-size: 1.8rem;
+    color: var(--romantic-red);
+}
+
+.back-btn {
+    margin-top: 2rem;
+    padding: 0.5rem 1.5rem;
+    background: var(--puffy-purple);
+    color: var(--romantic-red);
+    border: none;
+    border-radius: 10px;
+    font-family: var(--font-serif);
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.back-btn:hover {
+    opacity: 1;
+}

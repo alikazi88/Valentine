@@ -1,0 +1,118 @@
+.countdown-section {
+    padding: 8rem 2rem;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 3rem;
+}
+
+.day-box {
+    height: 320px;
+    /* Increased from 250px */
+    perspective: 1200px;
+    cursor: pointer;
+}
+
+.box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-style: preserve-3d;
+}
+
+.day-box.unlocked .box-inner {
+    transform: rotateY(180deg);
+}
+
+.box-front,
+.box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    /* Increased padding */
+    box-shadow: 0 8px 32px rgba(196, 30, 58, 0.08);
+    /* More romantic shadow */
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.box-front {
+    background: white;
+    color: var(--romantic-red);
+}
+
+.box-back {
+    background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 100%);
+    color: var(--deep-brown);
+    transform: rotateY(180deg);
+}
+
+.day-number {
+    font-family: var(--font-serif);
+    font-size: 3.5rem;
+    /* Increased */
+    font-weight: 700;
+    line-height: 1;
+}
+
+.day-title {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.lock-overlay {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.unlock-input {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 12px;
+    border: 1px solid #ffccd5;
+    margin-top: 1rem;
+    text-align: center;
+    font-family: var(--font-sans);
+    background: #fffcfc;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.unlock-input:focus {
+    border-color: var(--romantic-red);
+}
+
+.hint-label {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    text-align: center;
+    margin-bottom: 0.2rem;
+    color: var(--deep-brown);
+}
+
+.reward-icon {
+    font-size: 5rem;
+    line-height: 1;
+    filter: drop-shadow(0 10px 15px rgba(196, 30, 58, 0.2));
+}
