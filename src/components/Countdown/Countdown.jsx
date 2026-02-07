@@ -8,40 +8,40 @@ const daysData = [
     {
         id: 7,
         title: "Rose Day",
-        riddle: "mitali",
-        hint: "What's your name? (All lowercase)",
+        riddle: "amas",
+        hint: "where was our first irl date? (cafe)",
         icon: "🌹",
         content: "A bouquet of virtual roses for the most beautiful girl."
     },
     {
         id: 8,
         title: "Propose Day",
-        riddle: "forever",
-        hint: "How long will I love you?",
+        riddle: "buddhu",
+        hint: "with whom was our first ever facetime?",
         icon: "💍",
         content: "Will you stay by my side through every 3D adventure?"
     },
     {
         id: 9,
         title: "Choco Day",
-        riddle: "sweet",
-        hint: "Your smile is as ___ as candy?",
+        riddle: "lindt",
+        hint: "what is your favourite dark chocolate?",
         icon: "🍫",
         content: "You're sweeter than the finest Swiss chocolate."
     },
     {
         id: 10,
         title: "Teddy Day",
-        riddle: "hug",
-        hint: "What I want to give you right now?",
+        riddle: "thong",
+        hint: "what did i bring with me back that you wore?",
         icon: "🧸",
         content: "A virtual teddy to keep you warm until I can hold you."
     },
     {
         id: 11,
         title: "Promise Day",
-        riddle: "always",
-        hint: "When will I be there for you?",
+        riddle: "forever",
+        hint: "how long will i be there for you?",
         icon: "🤝",
         content: "I promise to always make you smile."
     },
@@ -49,23 +49,23 @@ const daysData = [
         id: 12,
         title: "Hug Day",
         riddle: "warm",
-        hint: "A hug feels ___ and cozy?",
+        hint: "how did the dih feel inside?",
         icon: "🤗",
         content: "Sending you the biggest, warmest virtual hug."
     },
     {
         id: 13,
         title: "Kiss Day",
-        riddle: "kiss",
-        hint: "A romantic peck?",
+        riddle: "chudaai",
+        hint: "what do i always want to do with you?",
         icon: "💋",
         content: "Can't wait for our next real kiss."
     },
     {
         id: 14,
         title: "V-Day",
-        riddle: "love",
-        hint: "The Four Letter Word?",
+        riddle: "jaan",
+        hint: "what do i always call you?",
         icon: "💝",
         content: "You are the love of my life. Happy Valentine's Day, Mitali!"
     },
