@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import './Photobooth.css';
 
 // Dynamically import all images from the assets folder
-const images = import.meta.glob('/src/assets/images/*.{jpeg,jpg,png,dng}', { eager: true });
+const images = import.meta.glob('/src/assets/images/*.{jpeg,jpg,png}', { eager: true });
 
 // Helper to get image URL by filename
 const getImageUrl = (filename) => {

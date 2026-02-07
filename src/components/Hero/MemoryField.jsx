@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import Polaroid from './Polaroid';
 
 // Dynamically import all images from the assets folder
-const images = import.meta.glob('/src/assets/images/*.{jpeg,jpg,png,dng}', { eager: true });
+const images = import.meta.glob('/src/assets/images/*.{jpeg,jpg,png}', { eager: true });
 
 // Extract the URL from the imported module
 const imageList = Object.values(images).map(img => img.default);
